@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Dina Alomari</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="hello.js"></script>
+    <link rel="icon" href="images/favicon1.ico?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Raleway:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">Dina Alomari</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">My Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">My Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="booksAndmovies.html">Books and Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactMe.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="top_container">
+        <img class="top_cloud" src="images/cloud.png" alt="cloud">
+        <h1>I'm Dina</h1>
+        <h2>a computer engineer</h2>
+        <img class="bottom_cloud" src="images/cloud.png" alt="cloud">
+        <img class="clouddy" src="images/clouddy.png" alt="mountain" width="2000px">
+    </div>
+
+    <div class="middle-container">
+        <div class="profile">
+            <img id="profile-image" class="dina" src="images/dina.jfif" alt="totta">
+            <h2>Hello.</h2>
+            <p class="intro">My name is Dina Alomari, and I recently graduated with a very good GPA from the University of Science and Technology, where I majored in Computer Engineering..</p>
+        </div>
+        <hr>
+        <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3 class="contact-message">
+                Please do not hesitate to contact me if you require any additional information. I would be delighted to hear from you.
+            </h3>
+            <a class="btn btn-primary" href="mailto:email@example.com">CONTACT ME</a>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <a class="ac" href="https://www.linkedin.com/in/dina-alomari-621585202"><img class="footer-link" src="images/linkedin.png" alt=""></a>
+        <a class="ac" href="https://twitter.com/dena_alomari"><img class="footer-link" src="images/twitter.png" alt=""></a>
+        <a class="ac" href="https://www.facebook.com/profile.php?id=100069569255826"><img class="footer-link" src="images/facebook.png" alt=""></a>
+        <p class="copyright">© 2023 Dina Alomari.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="hello.js"></script>
+    <script>
+        // Image Slider
+        //<a href="images/t1.jfif">images/t1.jfif</a>
+        const images = ['dina.jfif', 't1.jfif', 't2.jfif', 't3.jfif']; // Add the filenames of your images here
+        const profileImage = document.getElementById('profile-image');
+        let currentImageIndex = 0;
+
+        function changeProfileImage() {
+            profileImage.src = `images/${images[currentImageIndex]}`;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+
+        setInterval(changeProfileImage, 3000); // Change image every 3 seconds
+    </script>
+</body>
+</html>

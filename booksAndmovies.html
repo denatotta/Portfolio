@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Dina Alomari</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="hello.js"></script>
+    <link rel="icon" href="images/favicon1.ico?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Raleway:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+
+    <style>
+        .favorites-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            margin-top: 30px;
+        }
+
+        .favorite-item {
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+            .favorite-item img {
+                width: 200px;
+                height: 300px;
+                object-fit: cover;
+                transition: transform 0.3s;
+            }
+
+            .favorite-item:hover img {
+                transform: scale(1.2);
+            }
+
+            .favorite-item .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .favorite-item:hover .overlay {
+                opacity: 1;
+            }
+
+            .favorite-item .overlay a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+            }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">Dina Alomari</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">My Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">My Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="booksAndmovies.html">Books and Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactMe.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="favorites-container middle-container">
+        <h1>My Favorite Books and Movies</h1>
+        <br /> <br /> <br /> <br />
+        <div class="favorites-grid">
+            <div class="favorite-item">
+                <h3>
+                    Men Are from Mars, Women Are from Venus
+                </h3>
+                <br />
+                <img src="images/book1.jpg" alt="Book 1">
+                <p class="contact-message">"Men Are from Mars, Women Are from Venus" is a popular book that explores the differences between men and women in relationships. It provides valuable insights into how men and women communicate, express love, and understand each other. The book offers practical advice for improving communication and building stronger relationships.</p>
+            </div>
+            <div class="favorite-item">
+                <h3>
+                    Land of Zykola
+                </h3>
+                <br />
+                <img src="images/book2.webp" alt="Book 2">
+                <p class="contact-message">"Land of Zykola" is an enchanting adventure book that takes readers on a magical journey to a mystical land. It follows the thrilling quest of a young protagonist as they navigate through hidden realms, encounter mythical creatures, and face daring challenges. With captivating storytelling and vivid imagery, the book sparks imagination and invites readers to explore a world filled with wonder and excitement.</p>
+            </div>
+            <div class="favorite-item">
+                <h3>Bird Box</h3>
+                <br />
+                <img src="images/movie1.png" alt="Movie 1">
+                <p class="contact-message">"Bird Box" is a thrilling post-apocalyptic movie where people must blindfold themselves to survive against a mysterious force. Follow a courageous protagonist as she protects her family in a world filled with danger and suspense. It's a gripping ride from start to finish.</p>
+            </div>
+            <div class="favorite-item">
+                <h3>Sherlock Holmes</h3>
+                <br />
+                <img src="images/movie2.jpg" alt="Movie 2">
+                <p class="contact-message">"Sherlock Holmes" is a thrilling detective movie featuring the iconic character. Join Sherlock Holmes and Dr. Watson as they solve mysteries and uncover conspiracies in an action-packed adventure. Prepare for a suspenseful journey into the brilliant mind of Sherlock Holmes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        <a class="ac" href="https://www.linkedin.com/in/dina-alomari-621585202"><img class="footer-link" src="images/linkedin.png" alt=""></a>
+        <a class="ac" href="https://twitter.com/dena_alomari"><img class="footer-link" src="images/twitter.png" alt=""></a>
+        <a class="ac" href="https://www.facebook.com/profile.php?id=100069569255826"><img class="footer-link" src="images/facebook.png" alt=""></a>
+        <p class="copyright">© 2023 Dina Alomari.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="favorites.js"></script>
+</body>
+</html>
